@@ -31,3 +31,9 @@ Main purpose:
 - mvn dependency:tree
 - mvn spring-boot:run
 - java -jar target/git.automation-0.0.1-SNAPSHOT.jar
+
+---
+
+## Reference
+
+- [從無到有上手你的第一個 Spring Boot 應用程式](https://blog.miniasp.com/post/2022/09/19/Spring-Boot-Quick-Start-From-Scratch)
