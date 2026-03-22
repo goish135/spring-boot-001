@@ -22,6 +22,7 @@ Main purpose:
 ---
 
 ## 📂 Project Structure
+```
 SPRING-BOOT-001/
 ├── src/
 │   └── main/
@@ -32,6 +33,7 @@ SPRING-BOOT-001/
 ├── .gitignore
 ├── pom.xml
 └── README.md
+```
 ---
 
 ## Commands
