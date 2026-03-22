@@ -50,6 +50,17 @@ curl -L \
   -H "Authorization: Bearer ${token}" \
   https://api.github.com/repos/goish135/spring-boot-001/contents/README.md
 ```
+- curl for update git content
+```
+curl -X PUT "http://localhost:8080/api/github/goish135/spring-boot-001/commit" \          
+-H "Content-Type: application/json" \-d '{                          
+  "filePath": "README.md",                                                
+  "content": "Hello GitHub from curl2!",
+  "commitMessage": "Update README.md via API",
+  "branch": "main",
+  "sha":${sha}
+}'
+```
 ---
 
 ## Reference
