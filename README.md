@@ -22,7 +22,16 @@ Main purpose:
 ---
 
 ## 📂 Project Structure
-
+SPRING-BOOT-001/
+├── src/
+│   └── main/
+│       └── java/
+│           └── com/
+│               └── py/
+│                   └── GitAutomation.java
+├── .gitignore
+├── pom.xml
+└── README.md
 ---
 
 ## Commands
