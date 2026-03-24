@@ -1,6 +1,1 @@
-id: getting-started-ip
-uri: /ip
-upstream: 
-  type: roundrobin
-  nodes: 
-    httpbin.org:80: 1
+Hello GitHub from curl2!
