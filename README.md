@@ -23,16 +23,25 @@ Main purpose:
 
 ## 📂 Project Structure
 ```
-SPRING-BOOT-001/
-├── src/
-│   └── main/
-│       └── java/
-│           └── com/
-│               └── py/
-│                   └── GitAutomation.java
+spring-boot-001
+├── samples/                     # Sample YAML config
+│   └── config.yaml
+│
+├── src/main/java/com/py
+│   ├── controller/              # REST API Layer
+│   │   └── GitHubController.java
+│   │
+│   ├── service/                 # Business Logic
+│   │   └── GitHubService.java
+│   │
+│   ├── model/                   # DTO / Data Model
+│   │   └── GitCommitDto.java
+│   │
+│   └── GitHubAutomationApplication.java
+│
+├── README.md
 ├── .gitignore
-├── pom.xml
-└── README.md
+└── pom.xml
 ```
 ---
 
