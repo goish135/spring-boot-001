@@ -1,6 +1,6 @@
-id: getting-started-ip
+id: getting-started-ip-updated
 uri: /ip
-upstream: 
+upstream:
   type: roundrobin
-  nodes: 
+  nodes:
     httpbin.org:80: 1
