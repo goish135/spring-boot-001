@@ -46,7 +46,7 @@ SPRING-BOOT-001/
 ---
 
 ### Steps to reproduce
-0. export $GITHUB_TOKEN=${有write permission的token}
+0. export `$GITHUB_TOKEN=${有write permission的token}`
 1. curl for get sha
 
   ```
