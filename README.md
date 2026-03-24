@@ -60,7 +60,7 @@ SPRING-BOOT-001/
   ```
   curl -X PUT "http://localhost:8080/api/github/goish135/spring-boot-001/commit" \          
   -H "Content-Type: application/json" \-d '{                          
-    "filePath": "README.md",                                                
+    "filePath": "samples/config.yaml",                                                
     "content": "Hello GitHub from curl2!",
     "commitMessage": "Update README.md via API",
     "branch": "main",
