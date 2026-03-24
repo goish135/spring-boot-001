@@ -55,27 +55,29 @@ spring-boot-001
 ---
 
 ### Steps to reproduce
+Note: 請自行更換OOXX
 0. export `$GITHUB_TOKEN=${有write permission的token}`
 1. curl for get sha
 
   ```
   curl -L \
     -H "Accept: application/vnd.github+json" \
-    -H "Authorization: Bearer ${token}" \
+    -H "Authorization: Bearer OOXX" \
     https://api.github.com/repos/goish135/spring-boot-001/contents/samples/config.yaml
   ```
 
 2. curl for update git content
 
   ```
-  curl -X PUT "http://localhost:8080/api/github/goish135/spring-boot-001/commit" \          
-  -H "Content-Type: application/json" \-d '{                          
-    "filePath": "samples/config.yaml",                                                
-    "content": "Hello GitHub from curl2!",
-    "commitMessage": "Update README.md via API",
-    "branch": "main",
-    "sha":${sha}
-  }'
+curl -X PUT "http://localhost:8080/api/github/goish135/spring-boot-001/commit" \
+-H "Content-Type: application/json" \
+-d '{
+  "filePath": "samples/config.yaml",
+  "content": "id: getting-started-ip-updated\nuri: /ip\nupstream:\n  type: roundrobin\n  nodes:\n    httpbin.org:80: 1",
+  "commitMessage": "Update README.md via API",
+  "branch": "main",
+  "sha": OOXX
+}'
   ```
 
 ## Reference
