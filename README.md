@@ -56,6 +56,7 @@ spring-boot-001
 
 ### Steps to reproduce
 Note: 請自行更換OOXX
+
 0. export `$GITHUB_TOKEN=${有write permission的token}`
 1. curl for get sha
 
