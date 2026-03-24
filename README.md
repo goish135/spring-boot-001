@@ -46,13 +46,14 @@ SPRING-BOOT-001/
 ---
 
 ### Steps to reproduce
+0. export $GITHUB_TOKEN=${有write permission的token}
 1. curl for get sha
 
   ```
   curl -L \
     -H "Accept: application/vnd.github+json" \
     -H "Authorization: Bearer ${token}" \
-    https://api.github.com/repos/goish135/spring-boot-001/contents/README.md
+    https://api.github.com/repos/goish135/spring-boot-001/contents/samples/config.yaml
   ```
 
 2. curl for update git content
