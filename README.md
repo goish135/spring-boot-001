@@ -42,26 +42,31 @@ SPRING-BOOT-001/
 - mvn dependency:tree
 - mvn spring-boot:run
 - java -jar target/git.automation-0.0.1-SNAPSHOT.jar
-- curl for get sha
 
-```
-curl -L \
-  -H "Accept: application/vnd.github+json" \
-  -H "Authorization: Bearer ${token}" \
-  https://api.github.com/repos/goish135/spring-boot-001/contents/README.md
-```
-- curl for update git content
-```
-curl -X PUT "http://localhost:8080/api/github/goish135/spring-boot-001/commit" \          
--H "Content-Type: application/json" \-d '{                          
-  "filePath": "README.md",                                                
-  "content": "Hello GitHub from curl2!",
-  "commitMessage": "Update README.md via API",
-  "branch": "main",
-  "sha":${sha}
-}'
-```
 ---
+
+### Steps to reproduce
+1. curl for get sha
+
+  ```
+  curl -L \
+    -H "Accept: application/vnd.github+json" \
+    -H "Authorization: Bearer ${token}" \
+    https://api.github.com/repos/goish135/spring-boot-001/contents/README.md
+  ```
+
+2. curl for update git content
+
+  ```
+  curl -X PUT "http://localhost:8080/api/github/goish135/spring-boot-001/commit" \          
+  -H "Content-Type: application/json" \-d '{                          
+    "filePath": "README.md",                                                
+    "content": "Hello GitHub from curl2!",
+    "commitMessage": "Update README.md via API",
+    "branch": "main",
+    "sha":${sha}
+  }'
+  ```
 
 ## Reference
 
